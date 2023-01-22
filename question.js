@@ -34,9 +34,33 @@ let questions = [
     {
         "question": "Mit welcher Tiergruppe sind die Dinosaurier am engsten verwandt? ",
         "answer_1": "Affen",
-        "answer_2": "Vögel",
+        "answer_2": "Menschen",
         "answer_3": "Eidechsen",
         "answer_4": "Vögel",
-        "right_answer": 5
+        "right_answer": 4
+    },
+    {
+        "question": "Wie lautet die Hauptstadt von Frankreich? ",
+        "answer_1": "Rom",
+        "answer_2": "Berlin",
+        "answer_3": "Paris",
+        "answer_4": "Wien",
+        "right_answer": 3
+    },
+    {
+        "question": "Welcher Agent steht im Zusammenhang mit der Lizenz zum Töten? ",
+        "answer_1": "James Bond",
+        "answer_2": "Jason Bourne",
+        "answer_3": "Etan Hunt",
+        "answer_4": "Wien",
+        "right_answer": 1
+    },
+    {
+        "question": "Welches Dateiformat öffnet man typischerweise mit dem Acrobat Reader?",
+        "answer_1": ".exe",
+        "answer_2": ".dwg",
+        "answer_3": ".pdf",
+        "answer_4": ".dxf",
+        "right_answer": 3
     }
 ];

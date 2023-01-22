@@ -12,7 +12,7 @@ body {
 }
 
 .quiz-card {
-    width: 40rem;
+    max-width: 40rem;
 }
 
 .card-title {
@@ -42,3 +42,30 @@ body {
     padding: 15px;
     object-fit: contain;
 }
+
+.quiz-answer-card:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.bg-success, .bg-danger{
+    color: white;
+}
+
+.bg-end{
+    border-top: 3px solid white;
+    background-image: url(" img/pokal.jpg");
+    background-size: cover;
+    color: white !important;
+    font-size: 32px;
+    text-align: center;
+    height: 400px;
+}
+
+.result{
+    margin-top: 200px;
+    font-size: 24px;
+}
+
+
+

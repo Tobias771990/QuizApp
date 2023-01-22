@@ -23,25 +23,41 @@
     <div class="container">
         <div class="card quiz-card">
             <img src="/img/question.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%" id="progressBarId"></div>
+            </div>
+            <div class="card-body bg-end" id="endscreenId" style="display: none;">
+                <div>
+                    Quiz beendet!
+                </div>
+
+                <div class="result">Du hast <b id="right-questionId"></b> Fragen von <b id="all-questionId-end"></b>
+                    richtig beantwortet.</div>
+
+                <button type="button" class="btn btn-success" onclick="restartGame()">Erneut
+                    spielen</button>
+
+            </div>
+            <div class="card-body" id="question-bodyId">
                 <h5 class="card-title" id="questionId"></h5>
 
-                <div class="card mb-2">
+                <div id="answer1" class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
                     <div class="card-body" id="answer_1_Id">
                         Robbie Williams
                     </div>
                 </div>
-                <div class="card mb-2">
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_2')">
                     <div class="card-body" id="answer_2_Id">
                         Lady Gaga
                     </div>
                 </div>
-                <div class="card mb-2">
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_3')">
                     <div class="card-body" id="answer_3_Id">
                         Tim Berners - Lee
                     </div>
                 </div>
-                <div class="card mb-2">
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_4')">
                     <div class="card-body" id="answer_4_Id">
                         Justin Bieber
                     </div>
@@ -49,9 +65,10 @@
 
                 <div class="question-footer">
                     <span>
-                        <b>1</b> von <b id="all-questionId"></b> Fragen
+                        <b id="question-numberId">1</b> von <b id="all-questionId"></b> Fragen
                     </span>
-                    <button type="button" class="btn btn-success">Nächste Frage</button>
+                    <button type="button" class="btn btn-success" id="next-button" onclick="nextQuestion()"
+                        disabled>Nächste Frage</button>
                 </div>
 
             </div>
