@@ -43,16 +43,16 @@ body {
     object-fit: contain;
 }
 
-.quiz-answer-card:hover{
+.quiz-answer-card:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.bg-success, .bg-danger{
+.bg-success, .bg-danger {
     color: white;
 }
 
-.bg-end{
+.bg-end {
     border-top: 3px solid white;
     background-image: url(" img/pokal.jpg");
     background-size: cover;
@@ -62,10 +62,21 @@ body {
     height: 400px;
 }
 
-.result{
+.result {
     margin-top: 200px;
     font-size: 24px;
 }
 
+@media(max-width:768px) {
 
+    /*     .quiz-card {
+        width: 100% !important;
+        height: 100% !important;
+    }
 
+    .container {
+        width: 100%;
+        max-width: unset;
+    } */
+
+}
